@@ -78,7 +78,6 @@ dataClean <- hdata[!is.na(hdata$steps),]
   weekdays <- tidyData[tidyData$dayof=='weekday',]
   weekend <-  tidyData[tidyData$dayof=='weekend',]
   
-  #panel plot
   xyplot(
     steps ~ interval | dayof,
     tidyMean,
