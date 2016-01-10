@@ -136,7 +136,6 @@ dataClean &lt;- hdata[!is.na(hdata$steps),]</code></pre>
   weekdays &lt;- tidyData[tidyData$dayof=='weekday',]
   weekend &lt;-  tidyData[tidyData$dayof=='weekend',]
   
-  #panel plot
   xyplot(
     steps ~ interval | dayof,
     tidyMean,
